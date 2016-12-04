@@ -9,11 +9,13 @@ public class coin : MonoBehaviour {
 
     int _touched;
     int coin_vis;
+    int coin_count;
 
 	// Use this for initialization
 	void Start () {
         coin_vis = 1;
         _touched = 0;
+        coin_count = 0;
 	}
 	
 	// Update is called once per frame
@@ -39,6 +41,7 @@ public class coin : MonoBehaviour {
                 {
                     cube.SetActive(false);
                     coin_vis = 0;
+                    coin_count++;
                 }
                 else
                 {
